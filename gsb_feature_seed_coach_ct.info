@@ -1,4 +1,4 @@
-name = gsb_feature_seed_coach_ct
+name = GSB Feature Seed Coach Content Type
 core = 7.x
 package = GSB
 version = 7.x-6.20
