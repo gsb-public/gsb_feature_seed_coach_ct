@@ -188,19 +188,19 @@ function gsb_feature_seed_coach_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '9',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
-        ),
-        'redirect' => array(
           'weight' => '7',
         ),
+        'redirect' => array(
+          'weight' => '8',
+        ),
         'workbench_access' => array(
-          'weight' => '4',
+          'weight' => '1',
         ),
       ),
       'display' => array(),
