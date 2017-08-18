@@ -23,8 +23,13 @@ function gsb_feature_seed_coach_ct_image_default_styles() {
   $styles['570x570'] = array(
     'label' => '570x570',
     'effects' => array(
-      7 => array(
+      19 => array(
         'name' => 'kraken_optimize',
+        'data' => array(),
+        'weight' => 2,
+      ),
+      20 => array(
+        'name' => 'bypass_image_toolkit',
         'data' => array(),
         'weight' => 2,
       ),
