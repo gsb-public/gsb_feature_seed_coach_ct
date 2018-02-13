@@ -21,7 +21,7 @@ function gsb_feature_seed_coach_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_seed_coach';
-  $strongarm->value = '[node:field-first-name]-[node:field-last-name]';
+  $strongarm->value = '[node:field-first-name] [node:field-last-name]';
   $export['auto_entitylabel_pattern_node_seed_coach'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -184,6 +184,12 @@ function gsb_feature_seed_coach_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'seed_research_project' => array(
+        'custom_settings' => FALSE,
+      ),
+      'page_featured_programs' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -201,6 +207,9 @@ function gsb_feature_seed_coach_ct_strongarm() {
         ),
         'workbench_access' => array(
           'weight' => '1',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),

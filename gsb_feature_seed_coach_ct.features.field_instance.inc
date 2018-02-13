@@ -26,7 +26,7 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -135,12 +135,9 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -236,6 +233,50 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-seed_coach-field_full_name'.
+  $field_instances['node-seed_coach-field_full_name'] = array(
+    'bundle' => 'seed_coach',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'computed_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'computed_field_plain',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_full_name',
+    'label' => 'Full name',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'computed_field',
+      'settings' => array(),
+      'type' => 'computed',
+      'weight' => 31,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-seed_coach-field_image_single_public'.
   $field_instances['node-seed_coach-field_image_single_public'] = array(
     'bundle' => 'seed_coach',
@@ -253,7 +294,7 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
           'image_style' => '570x570',
         ),
         'type' => 'image',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -324,12 +365,9 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -435,13 +473,13 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'taxonomy',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -476,6 +514,7 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
   t('570 x 570px');
   t('Bio');
   t('First Name');
+  t('Full name');
   t('Last Name');
   t('Photo');
   t('Region');
