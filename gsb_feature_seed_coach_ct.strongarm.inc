@@ -261,7 +261,7 @@ function gsb_feature_seed_coach_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_seed_coach_pattern';
-  $strongarm->value = 'seed/coaches-consultants/coaches/[node:title]';
+  $strongarm->value = 'seed/coaches-consultants/coaches/current-coaches/[node:title]';
   $export['pathauto_node_seed_coach_pattern'] = $strongarm;
 
   return $export;
