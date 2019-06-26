@@ -245,7 +245,11 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'computed_field',
         'settings' => array(
-          'conditions' => array(),
+          'conditions' => array(
+            0 => array(
+              'condition' => '',
+            ),
+          ),
         ),
         'type' => 'computed_field_plain',
         'weight' => 1,
@@ -478,7 +482,7 @@ function gsb_feature_seed_coach_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 2,
       ),
       'teaser' => array(

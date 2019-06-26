@@ -190,6 +190,9 @@ function gsb_feature_seed_coach_ct_strongarm() {
       'page_featured_programs' => array(
         'custom_settings' => FALSE,
       ),
+      'homepage_school_news' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
